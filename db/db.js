@@ -12,12 +12,3 @@ const db = new Sequelize({
 
 module.exports = db
 
-
-// db.sync()
-//     .then(() => {
-//         return Scooter.create({charge:0, stationId: 13})
-//     })
-//     .then(scooter => {
-//         console.log(scooter)
-//     })
-//     .catch(console.error)

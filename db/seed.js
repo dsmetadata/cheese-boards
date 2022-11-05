@@ -3,6 +3,7 @@ const db = require('./db')
 
 //Create
 async function seed () {
+
     // Drop and Create all tables in the db
     await db.sync({ force: true }) 
     // await Board.sync({ force: true }) 
@@ -139,76 +140,3 @@ seed ()
 //npm run 'script name' to run script i.e. npm run seed
 
 
-/*
-
-
-
-User no foreign key
-Board - UserId
-Cheese no foreign key
-
-Board_Cheese BoardId CheeseId
-
-
-
-
-
-
-Cheese
-
-French Camembert
-A moist, soft, creamy, surface-ripened cow's milk cheese.
-https://en.wikipedia.org/wiki/Camembert
-
-
-Stilton
-An English cheese, produced in two varieties:
- 1.Blue, which has Penicillium roqueforti added to generate a characteristic smell and taste
- 2.White, which does not.
-https://en.wikipedia.org/wiki/Stilton_cheese
-
-Brie
-A soft cow's-milk cheese named after Brie, the French region from which it originated.
-It is pale in color with a slight grayish tinge under a rind of white mould.
-It is similar to Camembert,containing between 60% and 75% butterfat, slightly higher than Camembert.
-https://en.wikipedia.org/wiki/Brie
-
-Cheddar
-A natural cheese that is relatively hard, off-white (or orange if colourings such as annatto are added)
-and sometimes sharp-tasting. Cheddar originates from the English village of Cheddar in Somerset.
-https://en.wikipedia.org/wiki/Cheddar_cheese
-
-Gouda
-A sweet, creamy, yellow cow's milk cheese originating from the Netherlands.It is one of the most popular
-cheeses worldwide. The name is used today as a general term for numerous similar cheeses produced in 
-the traditional Dutch manner.
-https://en.wikipedia.org/wiki/Gouda_cheese
-
-
-Red Leicester
-Red Leicester (also known simply as Leicester or Leicestershire cheese) is an English cheese,
-made in a similar manner to Cheddar cheese, although it is crumbly in texture and typically sold at 
-6 to 12 months of age. The rind is reddish-orange with a powdery mould on it.
-
-Since the 18th century, it has been coloured orange by the addition of annatto extract during manufacture.
-It is a cow's milk cheese, and is named after the city of Leicester, or the ceremonial county it is located in,
-Leicestershire.
-https://en.wikipedia.org/wiki/Red_Leicester
-
-
-Buffalo Mozzarella
-A mozzarella made from the milk of Italian Mediterranean buffalo. 
-It is a dairy product traditionally manufactured in Campania, especially in the provinces of Caserta and Salerno.
-
-The term mozzarella derives from the procedure called mozzare which means "cutting by hand", 
-separating from the curd, and serving in individual pieces. It is appreciated for its versatility
-and elastic texture and often called "the queen of the Mediterranean cuisine", "white gold" or "the pearl of the table".
-
-https://en.wikipedia.org/wiki/Buffalo_mozzarella
-
-
-
-
-
-
-*/
